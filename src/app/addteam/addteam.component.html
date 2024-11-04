@@ -1,0 +1,81 @@
+<ul class="nav nav-underline  justify-content-evenly">
+    
+    <li class="nav-item">
+      <a class="nav-link " href="#">Les comptes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Ajouter compte</a>
+    </li>
+    
+  </ul>
+
+
+  <div class="form-container mt-3">
+    <h2>Ajouter Compte</h2>
+    <form [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+      <table  class="  .table-borderless" >
+        <tr>
+        <td><label for="avatar">Choose a profile picture:</label></td>
+         <td class="cel  "><input class=" form-control mb+3" type="file" id="avatar" accept="image/*"> </td>
+         
+          <td><label for="cin">CIN :</label></td>
+          <td ><input formControlName="cin" type="text" id="cin " /></td>
+        </tr>
+  
+        <tr>
+          <td><label for="nom">Nom :</label></td>
+          <td><input formControlName="nom" type="text" id="nom" /></td>
+          <td><label for="prenom">Prénom :</label></td>
+          <td ><input formControlName="prenom" type="text" id="prenom" /></td>
+        </tr>
+  
+        <tr>
+          <td><label for="dtn">Date de Naissance :</label></td>
+          <td><input formControlName="dateNaissance" type="date"  id="dtn"/></td>
+       
+          <td><label > Genre :</label></td>
+          <td class="d-flex align-items-stretch">
+            <table  class=" align-items-stretch m-1 ">
+                <td ><input type="radio" formControlName="sexe" value="H" id="h" /></td>
+
+                <td><label for="h">  H</label></td>
+                <td><input type="radio" formControlName="sexe" value="F"  id="f"/> </td>
+
+                <td><label for="f">F</label></td>
+          
+            </table>
+          </td>
+          
+        </tr>
+  
+        <tr>
+          <td><label for="tel">Téléphone :</label></td>
+          <td><input formControlName="telephone" type="text" id="tel"/></td>
+        
+          <td><label for="mail">E-mail :</label></td>
+          <td ><input formControlName="email" type="email" id="mail"/></td>
+        </tr>
+  
+        <tr>
+          <td><label for="adr">Adresse :</label></td>
+          <td ><input formControlName="adresse" type="text" id="adr"/></td>
+        
+          <td><label for="poste">Poste :</label></td>
+          <td >
+            <select formControlName="poste" id="poste">
+              <option value="" disabled selected>Choisir un poste</option>
+              <option value="admin">Admin</option>
+              <option value="user">Utilisateur</option>
+              <option value="manager">Manager</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+  
+      <div class="form-actions mt-5">
+        <button type="button" class="cancel-btn" (click)="onCancel()">Annuler</button>
+        <button type="submit" class="submit-btn" [disabled]="!accountForm.valid">Enregistrer</button>
+      </div>
+    </form>
+  </div>
+  

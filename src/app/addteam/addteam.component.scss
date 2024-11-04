@@ -1,0 +1,107 @@
+
+.nav-link{
+    color: black;
+}
+.form-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border:2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    width: 48%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .sexe-options {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cancel-btn {
+    background-color: #b71c1c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submit-btn {
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collaps;
+    border: 0;
+  }
+  
+  th, td {
+    border:0solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+ 
+  label {
+    display: block;
+    font:
+      1rem 'Fira Sans',
+      sans-serif;
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 0;
+  }
+  .haa{
+    background: #f30808;
+  }
+  .raa{
+    background: #201d68;
+  }
+  
+ .input[type=file] {
+    color: #a8561f;
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 02px solid #222245;
+    width: 20;
+  }
+  /*.form-control{
+    background: #8ad07e;
+  }
+  .cel{
+    background: #000;
+  }*/

@@ -1,0 +1,33 @@
+<div class="menu mt-5" >
+ 
+  <h6 (click)="toggleSection('accueil')">Accueil</h6>
+  <div *ngIf="activeSection === 'accueil'" class="sub-menu">
+    <ul>
+      <li><a routerLink='/accueil'></a>tous</li>
+      <li>labo</li>
+      <li>Stock</li>
+    </ul>
+  </div>
+
+  <h6 (click)="toggleSection('TB')">Tableau de bord</h6>
+  <div *ngIf="activeSection === 'TB'" class="sub-menu">
+    <ul>
+      <li>toute</li>
+      <li>labo</li>
+      <li>Stock</li>
+    </ul>
+  </div>
+
+  <h6 (click)="toggleSection('GS')">Gestion de stock</h6>
+  <div *ngIf="activeSection === 'GS'" class="sub-menu">
+    <ul>
+      <li>toute</li>
+      <li>labo</li>
+      <li>Stock</li>
+    </ul>
+  </div>
+
+  <h6 >   Gestion de compte   </h6>
+
+  <h6 >Historique des consultations</h6>
+</div>
